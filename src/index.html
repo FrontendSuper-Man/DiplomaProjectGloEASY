@@ -2,48 +2,38 @@
 <html>
 
 <head>
-	<!-- PAGE TITLE -->
 	<title>Шаблон сайта электрика</title>
-
-	<!-- META-DATA -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="author" content="Команда разработчиков collary.ru" />
 	<meta name="copyright" content="© collary.ru, дизайн и разработка, 2018" />
-	<link rel="icon" type="image/png" href="favicon.png" />
-
-	<!-- STYLESHEETS :: FONTS -->
+	<link rel="icon" type="image/png" href="./../favicon.png" />
 	<link
 		href='https://fonts.googleapis.com/css?family=Open+Sans:600,400,300,400italic,600,700,700italic,800&subset=latin,cyrillic'
 		rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!-- STYLESHEETS :: TEMPLATE -->
-	<link href="css/style.css" rel="stylesheet">
+	<link href="./../css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 
-	<!-- * * * * * * Mobile menu * * * * * * -->
 	<div class="mobile-menu">
 		<span class="mobile-menu-close close"></span>
 		<a href="#callback" class="callback-btn fancyboxModal hidden-sm"><i class="fa fa-phone"></i> Заказать звонок</a>
 		<div class="push20"></div>
 		<ul>
-			<li><a href="#services">Цены на услуги</a></li>
-			<li><a href="#faq">Ответы на вопросы</a></li>
-			<li><a href="#contacts">Контакты</a></li>
+			<li><a id="smooth-li" href="#services">Цены на услуги</a></li>
+			<li><a id="smooth-li" href="#faq">Ответы на вопросы</a></li>
+			<li><a id="smooth-li" href="#contacts">Контакты</a></li>
 		</ul>
 	</div>
 	<div class="overlay"></div>
-	<!-- * * * * * * Mobile menu: end * * * * * * -->
-
 
 
 	<div class="main-wrapper">
-		<!-- * * * * * * Header * * * * * * -->
 		<div class="header-wrapper">
 			<div class="header-panel">
 				<div class="container">
@@ -64,7 +54,7 @@
 			<div class="container">
 				<div class="header relative">
 					<div class="logo left">
-						<a href="#"><img src="images/logo.png" /></a>
+						<a href="#"><img src="../../images/logo.png" /></a>
 					</div>
 
 					<div class="mob-menu-btn hidden-md hidden-lg right">
@@ -72,9 +62,9 @@
 						<span></span>
 						<span></span>
 					</div>
-					<a href="#callback" class="callback-btn fancyboxModal hidden-xs">Заказать звонок</a>
+					<a id="header-btn-modal" href="#callback" class="callback-btn fancyboxModal hidden-xs">Заказать
+						звонок</a>
 
-					<!-- * * * * * * Top menu * * * * * * -->
 					<div class="top-menu visible-md-inline-block visible-lg-inline-block">
 						<ul>
 							<li><a href="#services">Цены на услуги</a></li>
@@ -83,21 +73,22 @@
 						</ul>
 					</div>
 					<div class="cleaner"></div>
-					<!-- * * * * * * Top menu: end* * * * * * -->
 
 				</div>
 			</div>
 		</div>
 		<div class="header-push"></div>
-		<!-- * * * * * * Header: end * * * * * * -->
 
 
-		<!-- * * * * * * Top slider * * * * * * -->
 		<div class="top-slider white text-center relative">
-			<div class="item relative"
-				style="background: url(images/slide1.jpg) 50% 50% no-repeat; background-size: cover;">
-				<div class="table">
+
+			<div class="slide-item item relative active"
+				style="background: url(../images/slide1.jpg) 50% 50% no-repeat; background-size: cover;">
+
+				<div class="table active">
+
 					<div class="table-cell">
+
 						<div class="container">
 							<h1 class="big">
 								Шаблон сайта электрика
@@ -107,11 +98,15 @@
 								Найдете дешевле - вернем разницу!
 							</div>
 						</div>
+
 					</div>
+
 				</div>
+
 			</div>
-			<div class="item relative"
-				style="background: url(images/slide2.jpg) 50% 50% no-repeat; background-size: cover;">
+
+			<div class="slide-item item relative"
+				style="background: url(../images/slide2.jpg) 50% 50% no-repeat; background-size: cover;">
 				<div class="table">
 					<div class="table-cell">
 						<div class="container">
@@ -126,8 +121,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="item relative"
-				style="background: url(images/slide3.jpg) 50% 50% no-repeat; background-size: cover;">
+
+			<div class="slide-item item relative"
+				style="background: url(../images/slide3.jpg) 50% 50% no-repeat; background-size: cover;">
 				<div class="table">
 					<div class="table-cell">
 						<div class="container">
@@ -144,10 +140,9 @@
 			</div>
 
 		</div>
-		<!-- * * * * * * Top slider: end * * * * * * -->
 
 
-		<!-- * * * * * * Services section * * * * * * -->
+
 		<section class="services-section gray-bg" id="services">
 			<div class="push100"></div>
 			<div class="container">
@@ -159,14 +154,22 @@
 				<div class="push40"></div>
 
 
+
+
+
+
+
+
+
 				<div class="services-elements">
 					<div class="row services-carousel">
+
 						<div class="col-sm-6 col-md-4">
+
 							<div class="element relative">
-								<a class="absolute fancyboxModal" href="#application"
-									data-application="Аварийный выезд"></a>
+								<a class="absolute fancyboxModal" href="#application" data-application="Аварийный выезд"></a>
 								<div class="img-wrapper">
-									<img src="images/service1.jpg">
+									<img src="../images/service1.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Аварийный выезд</div>
@@ -176,14 +179,17 @@
 										сфера нашей активности способствует подготовки
 									</div>
 								</div>
+
 							</div>
+
 						</div>
+
 						<div class="col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Монтаж или замена электропроводки"></a>
 								<div class="img-wrapper">
-									<img src="images/service2.jpg">
+									<img src="../images/service2.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Монтаж или замена электропроводки</div>
@@ -195,12 +201,13 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Ремонт, замена, перенос розеток"></a>
 								<div class="img-wrapper">
-									<img src="images/service3.jpg">
+									<img src="../images/service3.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Ремонт, замена, перенос розеток</div>
@@ -212,12 +219,13 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
+
+						<!-- <div class="col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Замена электросчетчика"></a>
 								<div class="img-wrapper">
-									<img src="images/service4.jpg">
+									<img src="../images/service4.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Замена электросчетчика</div>
@@ -229,12 +237,13 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Установка, замена люстры"></a>
 								<div class="img-wrapper">
-									<img src="images/service5.jpg">
+									<img src="../images/service5.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Установка, замена люстры</div>
@@ -246,12 +255,13 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-sm-6 col-md-4">
 							<div class="element relative">
 								<a class="absolute fancyboxModal" href="#application"
 									data-application="Установка светильников"></a>
 								<div class="img-wrapper">
-									<img src="images/service6.jpg">
+									<img src="../images/service6.jpg">
 								</div>
 								<div class="element-content">
 									<div class="title-h5 upper">Установка светильников</div>
@@ -262,36 +272,51 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
+
 					</div>
+
 				</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="services-arrow">
-					<img class="arrow-left" src="images/right-arrow_1.svg" alt="arrow-left">
-					<img class="arrow-right" src="images/right-arrow_1.svg" alt="arrow-right">
+					<img class="arrow-left" src="../images/right-arrow_1.svg" alt="arrow-left">
+					<img class="arrow-right" src="../images/right-arrow_1.svg" alt="arrow-right">
 				</div>
 
 			</div>
+
 			<div class="push70"></div>
 			<div class="push20 hidden-xs"></div>
+
 		</section>
-		<!-- * * * * * * Services section: end * * * * * * -->
-		<!-- * * * * * * Quest section * * * * * * -->
+
+
+
 		<section class="quest-section">
 			<div class="push70"></div>
 			<div class="container text-center">
 				<span class="f30 helios">Не нашли нужной услуги?</span>
 				<div class="push20 visible-xs visible-sm"></div>
-				<a class="button button-services fancyboxModal invert" href="#feedback">Звоните, мы обязательно вам
+				<a id="callHelp" class="button button-services fancyboxModal invert" href="#feedback">Звоните, мы обязательно вам
 					поможем!</a>
 			</div>
 			<div class="push50"></div>
 		</section>
-		<!-- * * * * * * Quest section: end * * * * * * -->
 
 
 
-		<!-- * * * * * * Num counters section * * * * * * -->
 		<section class="num-section">
 			<div class="push90"></div>
 			<div class="push10 visible-xs"></div>
@@ -336,10 +361,8 @@
 			<div class="push80"></div>
 			<div class="push10 visible-xs"></div>
 		</section>
-		<!-- * * * * * * Num counters section: end * * * * * * -->
 
 
-		<!-- * * * * * * steps title section * * * * * * -->
 		<section class="section2 dark-bg white relative">
 			<div class="push50"></div>
 			<div class="push35 visible-xs"></div>
@@ -349,10 +372,8 @@
 			<div class="push35 visible-xs"></div>
 			<div class="push30"></div>
 		</section>
-		<!-- * * * * * * steps title section : end * * * * * * -->
 
 
-		<!-- * * * * * * steps section * * * * * * -->
 
 		<section class="steps-section">
 			<div class="push100"></div>
@@ -407,10 +428,8 @@
 			<div class="push20 visible-xs"></div>
 		</section>
 
-		<!-- * * * * * * steps section: end * * * * * * -->
 
 
-		<!-- * * * * * * Advantages section * * * * * * -->
 		<section class="advantages gray-bg" id="advantages">
 			<div class="push90"></div>
 			<div class="container text-center">
@@ -422,7 +441,7 @@
 						<div class="col-sm-4">
 							<div class="element">
 								<div class="img-wrapper">
-									<img src="images/icon1.png" />
+									<img src="../images/icon1.png" />
 								</div>
 								<div class="title">Самые низкие цены</div>
 								<div class="text">
@@ -433,7 +452,7 @@
 						<div class="col-sm-4">
 							<div class="element delay-200">
 								<div class="img-wrapper">
-									<img src="images/icon2.png" />
+									<img src="../images/icon2.png" />
 								</div>
 								<div class="title">Приедем к вам за 45 минут</div>
 								<div class="text">
@@ -444,7 +463,7 @@
 						<div class="col-sm-4">
 							<div class="element delay-400">
 								<div class="img-wrapper">
-									<img src="images/icon3.png" />
+									<img src="../images/icon3.png" />
 								</div>
 								<div class="title">Любая другая иконка</div>
 								<div class="text">
@@ -457,13 +476,9 @@
 			</div>
 			<div class="push70"></div>
 		</section>
-		<!-- * * * * * * Advantages section: end * * * * * * -->
 
 
 
-
-
-		<!-- * * * * * * Accordeon section * * * * * * -->
 		<section class="accordeon-section" id="faq">
 			<div class="push100"></div>
 			<div class="container">
@@ -530,32 +545,30 @@
 			<div class="push100"></div>
 			<div class="push10"></div>
 		</section>
-		<!-- * * * * * * Accordeon section: end * * * * * * -->
 
 
 
-		<!-- * * * * * * Contacts section * * * * * * -->
 		<section class="contacts-section dark-bg" id="contacts">
 			<div class="push70"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="element element1">
-							<div class="icon hidden-sm"><img src="images/address-icon.png" /></div>
+							<div class="icon hidden-sm"><img src="../images/address-icon.png" /></div>
 							г. Ваш город, <br />
 							ул. Ленина д. 3, офис 302
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="element element2">
-							<div class="icon hidden-sm"><img src="images/tel-icon.png" /></div>
+							<div class="icon hidden-sm"><img src="../images/tel-icon.png" /></div>
 							Тел.: 8 (987) 654-32-10<br />
 							E-mail: info@sitename.com
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class="element element3">
-							<div class="icon hidden-sm"><img src="images/clock-icon.png" /></div>
+							<div class="icon hidden-sm"><img src="../images/clock-icon.png" /></div>
 							пн–сб: 11:00–20:00<br />
 							вс: выходной
 						</div>
@@ -564,11 +577,9 @@
 			</div>
 			<div class="push40"></div>
 		</section>
-		<!-- * * * * * * Contacts section: end * * * * * * -->
 
 
-		<!-- * * * * * * map section * * * * * * -->
-		<section class="map-section">
+		<!-- <section class="map-section">
 			<script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 			<div id="mapexMap"></div>
 			<script type="text/javascript">
@@ -588,7 +599,7 @@
 								// Необходимо указать данный тип макета.
 								iconLayout: 'default#image',
 								// Своё изображение иконки метки.
-								iconImageHref: 'images/marker.png',
+								iconImageHref: '../images/marker.png',
 								// Размеры метки.
 								iconImageSize: [31, 45],
 								// Смещение левого верхнего угла иконки относительно
@@ -601,29 +612,23 @@
 
 				});
 			</script>
-		</section>
-		<!-- * * * * * * map section: end * * * * * * -->
+		</section> -->
 
 		<div class="footer-push"></div>
 	</div>
 
 
-
-
-	<!-- * * * * * * Footer * * * * * * -->
 	<div class="footer-wrapper">
 		<div class="container text-center f13">
 			© 2018. Шаблон сайта электрика. Разработано в <a href="http://collary.ru">collary.ru</a>
 		</div>
 	</div>
-	<!-- * * * * * * Footer: end * * * * * * -->
 
 
 	<div class="modal-overlay"></div>
-	<!-- * * * * * * Callback modal block * * * * * * -->
 	<div class="modal-callback" id="callback">
 		<div class="modal-close">
-			<img src="images/close_icon_green.svg" alt="modal-close">
+			<img src="../images/close_icon_green.svg" alt="modal-close">
 		</div>
 		<div class="title-h2">Мы перезвоним через 5 минут!</div>
 		<br />
@@ -643,10 +648,8 @@
 			</form>
 		</div>
 	</div>
-	<!-- * * * * * * Callback modal block: end * * * * * * -->
 
 
-	<!-- * * * * * * Feedback modal block * * * * * * -->
 	<div class="modal" id="feedback">
 		<div class="title-h2">Форма обратной связи</div>
 		<br />
@@ -671,18 +674,15 @@
 			</form>
 		</div>
 	</div>
-	<!-- * * * * * * Feedback modal block: end * * * * * * -->
 
 
-	<!-- * * * * * * Application modal block * * * * * * -->
 	<div class="modal" id="application">
 		<div class="title-h2">Форма заявки</div>
 		<br />
 		<div class="rf">
 			<form name="form-application">
 				<div class="form-group">
-					<input type="text" name="service_name" id="applicationInput" class="form-control"
-						readonly="readonly" />
+					<input type="text" name="service_name" id="applicationInput" class="form-control" readonly="readonly" />
 				</div>
 				<div class="form-group">
 					<input name="fio" type="text" class="form-control required" placeholder="Ваше имя *" />
@@ -697,7 +697,6 @@
 			</form>
 		</div>
 	</div>
-	<!-- * * * * * * /. Application modal block * * * * * * -->
 
 
 	<div class="modal" id="responseMessage">
@@ -708,18 +707,15 @@
 	</div>
 
 
+	<img src="../images/32_chevron_up.svg" alt="up" class="up">
 
 
-	<!-- * * * * * * button to top * * * * * * -->
-	<img src="images/32_chevron_up.svg" alt="up" class="up">
-	<!-- * * * * * * button to top: end * * * * * * -->
+
+	<!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
 
 
-	<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
 </body>
+<script src="../dist/js/index.js"></script>
 
 </html>
