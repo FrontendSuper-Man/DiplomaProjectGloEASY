@@ -16,6 +16,7 @@ const callback = () => {
 		callback.style.display = 'none'
 		modalOverlay.style.display = 'none'
 	}
+	
 	callHelp.addEventListener('click', () => block())
 	elemRelativeDiv.forEach(elem => elem.addEventListener('click', () => block()))
 	btnCallback.addEventListener('click', () => block())
